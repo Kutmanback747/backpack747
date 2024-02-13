@@ -7,12 +7,12 @@ from aiogram.types import (
 async def questionnaire_keyboard():
     markup = InlineKeyboardMarkup()
     python_button = InlineKeyboardButton(
-        "Python 🐍",
-        callback_data="python"
+        "Math",
+        callback_data="Math"
     )
     mojo_button = InlineKeyboardButton(
-        "Mojo 🔥",
-        callback_data="mojo"
+        "English 🔥",
+        callback_data="english"
     )
     markup.add(python_button)
     markup.add(mojo_button)
@@ -23,11 +23,11 @@ async def python_questionnaire_keyboard():
     markup = InlineKeyboardMarkup()
     python_button = InlineKeyboardButton(
         "Yes",
-        callback_data="yes_python"
+        callback_data="yes_math"
     )
     python_no_button = InlineKeyboardButton(
         "No",
-        callback_data="no_python"
+        callback_data="no_math"
     )
     markup.add(python_button)
     markup.add(python_no_button)

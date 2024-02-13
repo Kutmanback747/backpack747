@@ -4,7 +4,7 @@ from database import sql_queries
 
 class Database:
     def __init__(self):
-        self.connection = sqlite3.connect("db.sqlite3")
+        self.connection = sqlite3.connect("db1.sqlite3")
         self.cursor = self.connection.cursor()
 
     def sql_create_tables(self):
